@@ -2,8 +2,8 @@
 #This File will contain the information to be displayed in your portfolio
 
 #CHANGE BELOW
-profile_picture = "Images/DSC00076.jpeg"
-about_me = "My name is Sophia Brame, and I am a second year transfer student studying Physics at Georgia Tech. "
+profile_picture = "Images/profile.jpg"
+about_me = "I am Naomi Ikegwuonu. I am a mathematics student at The Georgia Insitute of Technology!"
 
 
 #CHANGE BELOW (OPTIONAL)
@@ -12,62 +12,65 @@ github_image_url = "https://cdn-icons-png.flaticon.com/256/25/25231.png"
 email_image_url = "https://logowik.com/content/uploads/images/513_email.jpg"
 
 #CHANGE BELOW
-my_linkedin_url = "https://www.linkedin.com/in/sophia-brame-850110251/"
-my_github_url = "https://github.com/csb-coding"
-my_email_address = "bramesophia@gmail.com"
+my_linkedin_url = "https://www.linkedin.com/in/naomi-ikegwuonu-00296a276"
+my_github_url = "https://github.com/nikegwuonu3"
+my_email_address = "naomi.ikegwuonu@gmail.com"
 
 
 education_data ={
-    'Degree': 'Bachelor of Science in Physics',
+    'Degree': 'Bachelor of Science in Mathematics',
     'Institution': 'Georgia Institute of Technology',
     'Location': 'Atlanta, GA',
-    'Expected Graduation': 'Spring 2027',
-    'GPA': '3.8'
+    'Graduation Date': 'Spring 2027',
+    'GPA': 'TBA'
 }
 course_data = {
-    "code":["CS 1301", "PHYS 2213", "MATH 1554", "HIST 3127"], 
-    "names":["Intro to CS", "Intro to Modern Physics", "Linear Algebra", "History of the Civil Rights Movement"], 
-    "semester_taken":["1st", "1st", "1st", "1st"],
-    "skills":["Fundamental python coding skills", "Foundational understanding of recent physics", "The basics of linear algebra and matrix operatons", "Text analysis and advanced historical processing"],
+    "code":["CS 1301", "MATH 1553", "PHYS 2212", "VIP"], 
+    "names":["Intro to CS", "Intro to Linear Algebra", "Intro to Physics II", "Vertically Integrated Project Course"], 
+    "semester_taken":["2nd", "2nd", "3rd", "3rd"],
+    "skills":["Python is not my favorite snake anymore", "Basically row reduction but easier than 1554", "Do not even get me started...","Great experience!"],
     }
 experience_data = {
-    "Team Member at Kaldi's Coffee": (["- Worked as a general team member, fulfilling all positions as needed",
-                                                                          "- Honed in adaptability and communication skills", "- Made Mr. Krabs Proud"],"Images/IMG_2220.jpeg"),
-    "Head Barista at Crescent Coffee":(["- Largest contributor to innovation of drink flavors and promotional ideas, also led training of all volunteers",
-                                                           "- Sharpened leadership, teamwork, and innovation skills"],"Images/IMG_5407.JPG"),
+    "Cook at Krusty Krab": (["- Worked on designing the Krabby Patty Recipe",
+                                                                          "- Increased Company Revenue by 200 dollars", "- Made Mr. Krabs Proud"],"Images/cook.jpg"),
+    "Cleaner at Krusty Krab":(["- Made the floor almost reflective",
+                                                           "- Increased customer visits by three folds by making restaurant clean"],"Images/cleaner.jpg"),
+    "Jelly Fish Catcher":(["- Caught 100+ Jellyfish with the help of my colleague Patrick"],"Images/jelly.jpg")
+
 }
 
 projects_data = {
-    "Establishing Muon Lifetime": "Worked with a group to develop an experiment that measures the lifetime expectancy for muons at sea level.",
+    "Krabby Patty Recipe": "Created the famous Recipe and tailored it from scratch",
 }
 
 programming_data = {
-    "Python ": 70,
+    "Python": 90,
+    "Java": 10,
+    "SQL": 20,
 }
 
 #CHANGE BELOW (OPTIONAL)
 programming_icons = {
-    "Python ": "🐍",
+    "Python": "🐍",
     "Java": "☕",
-    "C": "🔍",
+    "SQL": "🔍",
 }
-spoken_icons = {"Italian ": "🇮🇹 ",
-    "English ": "🇬🇧 ",
-    "Latin " : "🪦 "
+spoken_icons = {"French": "🇫🇷",
+    "English": "🇬🇧",
+    "Spanish":"🇪🇸"
 }
 
 #CHANGE BELOW
 spoken_data = {
-    "English ": "Fluent",
-    "Italian ": "Elementary",
-    "Latin ": "Intermediate"
+    "English": "Fluent",
+    "French": "Classroom Efficiency",
+    "Spanish": "Beginner",
 }
 leadership_data = {
-    "Member of Alpha Gamma Delta": (["- Member Class 2024, Gamma Phi Chapter"],"Images/20240819_223136_C4F52E.JPEG"),
-    "Member of Rhodes College Society of Physics": (["- General body member 2023-2024, designated hovercraft operator"], "Images/IMG_0307.jpeg")
+    "Driver at Mrs Puff's School": (["- Elected Worst Student of the Century"],"Images/puff.jpg"),
 
 }
-activity_data = {
-    "Second Helping Atlanta": ["- Packaged fresh ingredients for meals for families experiencing food insecurity across Atlanta", 
-            "- Learn more here: https://secondhelpingsatlanta.org/"]
+activity_data={
+    "SpongeBob and Patrick Friendship Club": ["- Conviced Squidwards to have fun", 
+            "- Sat under Patrick's rock"]
 }
