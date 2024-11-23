@@ -23,8 +23,10 @@ Welcome to our Streamlit Web Development Lab03 app! You can navigate between the
 
 1. Carolyn's Profile: An online portfolio of Carolyn's professional experience. 
 2. Naomi's Profile: An online portfolio of Naomi's professional experience. 
-3. Some API
-4.
+3. The Greek God API: This API provides information about Greek gods. Including their family, powers, where they reside, and their fables. 
+There is also information about mythological heroes, monsters, and titans. 
+4. Greek Mythology Game Quiz: A trivia game simulated using Google Gemini API. It tests your knowledge on the the information in The Greek God API.
+If you succeed (get higher than a 50%), Zeus will welcome to Olympus with open arms. And if you fail.... the Underworld is a horrid place.  
 
 """)
 
