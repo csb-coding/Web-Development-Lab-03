@@ -21,9 +21,9 @@ st.subheader("Carolyn Brame, Naomi Ikegwuonu")
 st.write("""
 Welcome to our Streamlit Web Development Lab03 app! You can navigate between the pages using the sidebar to the left. The following pages are:
 
-1.
-2.
-3.
+1. Carolyn's Profile: An online portfolio of Carolyn's professional experience. 
+2. Naomi's Profile: An online portfolio of Naomi's professional experience. 
+3. Some API
 4.
 
 """)
