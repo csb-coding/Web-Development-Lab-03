@@ -36,26 +36,46 @@ def familyTree(selectedGod):
   famTree = Digraph()
   famTree.node(selectedGod['name'], label=f"{selectedGod['name']}\n({selectedGod['description']})")
 
-  # Adding parents: 
+  # Parents: 
   for parent in godsFamily.get('parents', []):
     famTree.node(parent, label=parent)
     famTree.edge(parent, selectedGod['name'])
-  # Adding siblings: 
+    
+    # Parents Desription: 
+    # streamlit method #4 -- button (NEW)
+    if st.button(f"Show description of {parent}"):
+            parent_info = next((char for char in godInfo if char['name'] == parent), None)
+            if parent_info:
+                st.write(f"**{parent}**: {parent_info['description']}")
+  # Sibling(s): 
   for sibling in godsFamily.get('siblings', []):
     famTree.node(sibling, label=sibling)
     famTree.edge(sibling, selectedGod['name'])
+    
+    # Sibling(s) Description: 
+    if st.button(f"Show description of {sibling}"):
+            sibling_info = next((char for char in godInfo if char['name'] == sibling), None)
+            if sibling_info:
+                st.write(f"**{sibling}**: {sibling_info['description']}")
 
-  # Adding spouse(s): 
+  # Spouse(s): 
   for spouse in godsFamily.get('spouse', []):
     famTree.node(spouse, label=spouse)
     famTree.edge(selectedGod['name'], spouse)
+
+    # Spouse(s) Description: 
+    if st.button(f"Show description of {spouse}"):
+            spouse_info = next((char for char in godInfo if char['name'] == spouse), None)
+            if spouse_info:
+                st.write(f"**{spouse}**: {spouse_info['description']}")
   
-  # streamlit method #4 -- graphviz_chart (NEW)
+  # streamlit method #5 -- graphviz_chart (NEW)
   st.graphviz_chart(famTree)
 
-# streamlit method #5 -- header 
+# streamlit method #6 -- header 
 st.header(f"{godCharacter}'s Family Tree")
 familyTree(selected1) 
+st.write('---')
 
 #HEROES
 heroCharacter = st.selectbox("Choose a Hero:", [char['name'] for char in heroInfo])
@@ -65,6 +85,7 @@ st.image(selected2['image'], caption=heroCharacter)
 st.write(f"**Description:** {selected2['description']}")
 st.write(f"**Powers:** {', '.join(selected2.get('powers', []))}")
 st.write(f"**Myth:** {', '.join(selected2.get('stories', []))}")
+st.write('---')
 
 #MONSTERS
 monsterCharacter = st.selectbox("Choose a Monster:", [char['name'] for char in monsterInfo])
@@ -74,6 +95,7 @@ st.image(selected3['image'], caption=monsterCharacter)
 st.write(f"**Description:** {selected3['description']}")
 st.write(f"**Powers:** {', '.join(selected3.get('powers', []))}")
 st.write(f"**Myth:** {', '.join(selected3.get('stories', []))}")
+st.write('---')
 
 #TITANS
 titanCharacter = st.selectbox("Choose a Titan:", [char['name'] for char in titanInfo])
@@ -83,5 +105,8 @@ st.image(selected4['image'], caption=titanCharacter)
 st.write(f"**Description:** {selected4['description']}")
 st.write(f"**Powers:** {', '.join(selected4.get('powers', []))}")
 st.write(f"**Myth:** {', '.join(selected4.get('stories', []))}")
+st.write('---')
+
+
 
 
